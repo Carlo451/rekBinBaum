@@ -11,6 +11,7 @@ public class DummyTests {
         tests.put(0,addTestOne());
         tests.put(1,addTestTwo());
         tests.put(2,addTestThree());
+        tests.put(3,addTestFour());
 
     }
     private HashMap<String,ArrayList<String>> addTestOne(){
@@ -87,7 +88,28 @@ public class DummyTests {
         test.put("post",post);
         return test;
     }
-
+    private HashMap<String,ArrayList<String>> addTestFour(){
+        HashMap<String,ArrayList<String>> test = new HashMap<>();
+        ArrayList<String> pre = new ArrayList<>();
+        ArrayList<String> post = new ArrayList<>();
+        pre.add("d");
+        pre.add("b");
+        pre.add("f");
+        pre.add("c");
+        pre.add("a");
+        pre.add("h");
+        pre.add("e");
+        post.add("f");
+        post.add("c");
+        post.add("b");
+        post.add("h");
+        post.add("e");
+        post.add("a");
+        post.add("d");
+        test.put("pre",pre);
+        test.put("post",post);
+        return test;
+    }
     public HashMap<Integer, HashMap<String, ArrayList<String>>> getTests() {
         return tests;
     }
