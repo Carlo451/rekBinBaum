@@ -10,6 +10,8 @@ public class DummyTests {
     public DummyTests(){
         tests.put(0,addTestOne());
         tests.put(1,addTestTwo());
+        tests.put(2,addTestThree());
+
     }
     private HashMap<String,ArrayList<String>> addTestOne(){
         HashMap<String,ArrayList<String>> test = new HashMap<>();
@@ -59,6 +61,28 @@ public class DummyTests {
         post.add("c");
         post.add("g");
         post.add("f");
+        test.put("pre",pre);
+        test.put("post",post);
+        return test;
+    }
+    private HashMap<String,ArrayList<String>> addTestThree(){
+        HashMap<String,ArrayList<String>> test = new HashMap<>();
+        ArrayList<String> pre = new ArrayList<>();
+        ArrayList<String> post = new ArrayList<>();
+        pre.add("c");
+        pre.add("d");
+        pre.add("f");
+        pre.add("b");
+        pre.add("a");
+        pre.add("e");
+        pre.add("h");
+        post.add("d");
+        post.add("a");
+        post.add("e");
+        post.add("b");
+        post.add("h");
+        post.add("f");
+        post.add("c");
         test.put("pre",pre);
         test.put("post",post);
         return test;

@@ -9,7 +9,7 @@ public abstract class UtilClass {
         Knoten linkerKnoten;
         Knoten rechterKnoten;
 
-         String knotenWert = post.get(post.size()-1);
+         String knotenWert = post.getLast();
         if(post.size() == 1){
             linkerKnoten = new Knoten(new Leaf());
             rechterKnoten = new Knoten(new Leaf());

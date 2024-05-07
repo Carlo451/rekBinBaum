@@ -14,7 +14,7 @@ public class Knoten {
     }
     public String printBinBaum(){
 
-         return knotenWert +"("+getUnterKnoten(links,false)+getUnterKnoten(rechts,true) +")";
+         return (knotenWert +"("+getUnterKnoten(links,false)+getUnterKnoten(rechts,true) +")").replaceAll("\\(\\)","");
     }
     protected String getUnterKnoten(Knoten knoten,boolean rechts){
         return knoten.knotenWert == null ?  "": knoten.printBinBaum() + (rechts?"":",");
